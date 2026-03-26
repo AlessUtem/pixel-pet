@@ -14,7 +14,6 @@ CREATE TABLE IF NOT EXISTS profiles (
   display_name TEXT NOT NULL,
   avatar_url TEXT,
   total_score INTEGER DEFAULT 0,
-  rank INTEGER GENERATED ALWAYS AS STORED,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW())
 );
