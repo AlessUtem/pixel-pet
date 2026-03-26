@@ -1,0 +1,57 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #1f0d4f;
+  --color-secondary: #f0c020;
+  --color-accent: #ff1010;
+  --color-bg: #201058;
+  --color-text: #ffffff;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-secondary);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Pixel Art / Retro Style */
+html {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Material Overrides */
+.mat-mdc-button {
+  color: var(--color-text);
+}
+
+.mat-mdc-raised-button {
+  background-color: var(--color-primary) !important;
+}
+
+.mat-mdc-raised-button:hover {
+  background-color: var(--color-secondary) !important;
+}
